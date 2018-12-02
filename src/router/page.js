@@ -1,14 +1,26 @@
 let pageroutes = [
   {
-    path: "/hi/hi",
+    path: "/hicategories/hi",
     component: () => import('../posts/hi.md')
   },
   {
-    path: "/post/hi",
+    path: "hi",
     component: () => import('../posts/hi.md')
   },
   {
-    path: "/hi/hi",
+    path: "/hitags/hi",
     component: () => import('../posts/hi.md')
+  },
+  {
+    path: "/testcategories/test",
+    component: () => import('../posts/test.md')
+  },
+  {
+    path: "test",
+    component: () => import('../posts/test.md')
+  },
+  {
+    path: "/testtags/test",
+    component: () => import('../posts/test.md')
   }]
 export default pageroutes

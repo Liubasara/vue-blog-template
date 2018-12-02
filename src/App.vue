@@ -1,27 +1,24 @@
 <template>
   <div id="app">
+    <div v-for="(item, index) in post_data" :key="index">
+      <router-link :to="`/post/${item.name}`">
+        {{item.name}}
+      </router-link>
+    </div>
     <router-view/>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+<script>
+import { postData } from '@/utils/data'
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+export default {
+  name: 'App',
+  data () {
+    return {
+      post_data: JSON.parse(postData)
+    }
+  }
 }
+</script>
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>

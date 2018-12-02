@@ -1,1 +1,1 @@
-export let postData = '[{"name":"hi","layout":"post","title":"text","info":"test","categories":["hi"],"tags":["hi"],"contents":""}]'
+export let postData = '[{"name":"hi","title":"text","info":"test","categories":["hicategories"],"tags":["hitags"],"contents":""},{"name":"test","title":"test","info":"test","categories":["testcategories"],"tags":["testtags"],"contents":""}]'

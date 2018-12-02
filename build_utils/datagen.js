@@ -28,7 +28,6 @@ module.exports = async function getData() {
             // var days = currentDate.getTime() - date.getTime();
             // post.daysAgo = parseInt(days / (1000 * 60 * 60 * 24));
             // 当文章的内容不为空时，添加文章对象到数组中
-            console.log('post', post)
             if (post.contents !== '') {
               post.contents = '';
               var route = {};
@@ -38,7 +37,8 @@ module.exports = async function getData() {
               routes.push(route);
               var origin = {
                 name: post.name,
-                pagePath: `/post/${post.name}`
+                // pagePath: `/post/${post.name}`
+                pagePath: `${post.name}`
               }
               routes.push(origin);
               for (var tag of post.tags) {

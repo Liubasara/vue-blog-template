@@ -1,18 +1,18 @@
 <template>
-  <div class="wrapper">
-    Home
+  <div class="container">
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
-  name: 'home'
+  name: 'Layout'
 }
 </script>
 
 <style lang="stylus" scoped>
-
+.container
+  padding 20px
 </style>
+
 
