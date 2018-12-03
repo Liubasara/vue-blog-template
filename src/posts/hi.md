@@ -9,8 +9,8 @@ tags: ['hitags']
 # this is a markdown file
 
 > you can write your markdown file in @/posts and when you run the
-> ```shell
-> npm run serve
+> ```javascript
+> function a () {return }
 > ```
 > or 
 > ```shell

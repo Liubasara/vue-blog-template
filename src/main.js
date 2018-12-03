@@ -5,6 +5,8 @@ import store from './store'
 
 import './assets/base.styl'
 
+import 'highlight.js/styles/monokai-sublime.css'
+
 Vue.config.productionTip = false
 
 new Vue({
