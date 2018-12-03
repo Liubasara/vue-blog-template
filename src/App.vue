@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div v-for="(item, index) in post_data" :key="index">
+    <div v-for="(item, index) in $store.state.post_data" :key="index">
       <router-link :to="`/post/${item.name}`">
         {{item.name}}
       </router-link>
@@ -10,13 +10,11 @@
 </template>
 
 <script>
-import { postData } from '@/utils/data'
-
 export default {
   name: 'App',
   data () {
     return {
-      post_data: JSON.parse(postData)
+      
     }
   }
 }
